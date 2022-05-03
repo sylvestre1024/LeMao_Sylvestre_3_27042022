@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+
     <link class="favicon" rel="icon" type="img/png" href="images/favicon.png" />
     <title>ohmyfood - Commandez vos repas gastronomiques en ligne sur Paris et soyez servi quand vous arrivez</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <!--logo-->
         <h1 class="header__title">
@@ -50,51 +51,103 @@
         </div>
     </header>
     <main id="main-display">
+        <!-- Fonctionnement des réservations-->
+        <div class="nav">
+            <h3 class="nav__title">
+                Fonctionnement
+            </h3>
+            <div class="nav__list">
+                <div class="nav__list__elm">
+                    <a class="nav__list__elm__link" href="#">
+                        <div class="nav__list__elm__link__number">
+                            1
+                        </div>
+                        <div class="nav__list__elm__link__icon">
+                            <i class="fas fa-mobile-alt fa-fw">
+                            </i>
+                        </div>
+                        <p class="nav__list__elm__link__text">
+                            Choisissez un restaurant
+                        </p>
+                    </a>
+                </div>
+                <div class="nav__list__elm">
+                    <a class="nav__list__elm__link" href="#">
+                        <div class="nav__list__elm__link__number">
+                            2
+                        </div>
+                        <div class="nav__list__elm__link__icon">
+                            <i class="fas fa-list-ul fa-fw">
+                            </i>
+                        </div>
+                        <p class="nav__list__elm__link__text">
+                            Composez votre menu
+                        </p>
+                    </a>
+                </div>
+                <div class="nav__list__elm">
+                    <a class="nav__list__elm__link" href="#">
+                        <div class="nav__list__elm__link__number">
+                            3
+                        </div>
+                        <div class="nav__list__elm__link__icon">
+                            <i class="fas fa-store fa-fw">
+                            </i>
+                        </div>
+                        <p class="nav__list__elm__link__text">
+                            Dégustez au restaurant
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- FIN Fonctionnement des réservations-->
+        <!-- section Restaurants-->
         <section>
             <div class="major">
                 <h3 class="major__title">
                     Restaurants
                 </h3>
-                <div class="principal__conteneur max-width" id="restau">
+                <div class="major__container" id="restau">
                     <!--card type nouveau-->
-                    <div class="principal__conteneur__card max-width">
-                        <a class="principal__conteneur__card__link" href="page1.html">
-                            <div class="principal__conteneur__image">
-                                <span class="principal__conteneur__card--nouv">
+                    <div class="major__container__card">
+                        <a class="major__container__card__link" href="page1.html">
+                            <div class="major__container__image">
+                                <span class="major__container__card--nouv">
                                     Nouveau
                                 </span>
-                                <img class="principal__conteneur__card__img" src="images/restaurants/#la-palette-du-gout.jpg" alt="La palette du goût">
+                                <img class="major__container__card__img" src="images/restaurants/#la-palette-du-gout.jpg" alt="La palette du goût">
                             </div>
-                            <div class="principal__conteneur__card__text">
-                                <h4 class="principal__conteneur__card__text__name">
+                            <div class="major__container__card__text">
+                                <h4 class="major__container__card__text__name">
                                     La palette du goût
                                 </h4>
-                                <p class="principal__conteneur__card__text__localisation">
+                                <p class="major__container__card__text__loca">
                                     Ménilmontant
                                 </p>
-                                <div class="principal__conteneur__card__text__anim">
+                                <div class="major__container__card__text__anim">
                                     <i class="far fa-heart heart-1 fa-stack"></i>
                                     <i class="fas fa-heart heart-2 fa-stack"></i>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="principal__conteneur__card max-width">
-                        <a class="principal__conteneur__card__link" href="page2.html">
-                            <div class="principal__conteneur__image">
-                                <span class="principal__conteneur__card--nouv">
+                    <div class="major__container__card">
+                        <a class="major__container__card__link" href="page2.html">
+                            <div class="major__container__image">
+                                <span class="major__container__card--nouv">
                                     Nouveau
                                 </span>
-                                <img class="principal__conteneur__card__img" src="images/restaurants/#la-note-enchantee.jpg" alt="La note enchantée">
+                                <img class="major__container__card__img" src="images/restaurants/#la-note-enchantee.jpg" alt="La note enchantée">
                             </div>
-                            <div class="principal__conteneur__card__text">
-                                <h4 class="principal__conteneur__card__text__name">
+                            <div class="major__container__card__text">
+                                <h4 class="major__container__card__text__name">
                                     La note enchantée
                                 </h4>
-                                <p class="principal__conteneur__card__text__localisation">
+                                <p class="major__container__card__text__loca">
                                     Charonne
                                 </p>
-                                <div class="principal__conteneur__card__text__anim">
+                                <div class="major__container__card__text__anim">
                                     <i class="far fa-heart heart-1 fa-stack"></i>
                                     <i class="fas fa-heart heart-2 fa-stack"></i>
                                 </div>
@@ -103,38 +156,38 @@
                     </div>
                     <!--FIN card type nouveau-->
                     <!--card type restau-->
-                    <div class="principal__conteneur__card max-width">
-                        <a class="principal__conteneur__card__link" href="page3.html">
-                            <div class="principal__conteneur__image">
-                                <img class="principal__conteneur__card__img" src="images/restaurants/#a-la-francaise.jpg" alt="À la française">
+                    <div class="major__container__card">
+                        <a class="major__container__card__link" href="page3.html">
+                            <div class="major__container__image">
+                                <img class="major__container__card__img" src="images/restaurants/#a-la-francaise.jpg" alt="À la française">
                             </div>
-                            <div class="principal__conteneur__card__text text3">
-                                <h4 class="principal__conteneur__card__text__name">
+                            <div class="major__container__card__text text3">
+                                <h4 class="major__container__card__text__name">
                                     &Agrave; la française
                                 </h4>
-                                <p class="principal__conteneur__card__text__localisation">
+                                <p class="major__container__card__text__loca">
                                     Cité Rouge
                                 </p>
-                                <div class="principal__conteneur__card__text__anim">
+                                <div class="major__container__card__text__anim">
                                     <i class="far fa-heart heart-1 fa-stack"></i>
                                     <i class="fas fa-heart heart-2 fa-stack"></i>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="principal__conteneur__card max-width">
-                        <a class="principal__conteneur__card__link" href="page4.html">
-                            <div class="principal__conteneur__image">
-                                <img class="principal__conteneur__card__img" src="images/restaurants/#le-delice-des-sens.jpg" alt="Le délice des sens">
+                    <div class="major__container__card">
+                        <a class="major__container__card__link" href="page4.html">
+                            <div class="major__container__image">
+                                <img class="major__container__card__img" src="images/restaurants/#le-delice-des-sens.jpg" alt="Le délice des sens">
                             </div>
-                            <div class="principal__conteneur__card__text">
-                                <h4 class="principal__conteneur__card__text__name">
+                            <div class="major__container__card__text">
+                                <h4 class="major__container__card__text__name">
                                     Le délice des sens
                                 </h4>
-                                <p class="principal__conteneur__card__text__localisation">
+                                <p class="major__container__card__text__loca">
                                     Folie-Méricourt
                                 </p>
-                                <div class="principal__conteneur__card__text__anim">
+                                <div class="major__container__card__text__anim">
                                     <i class="far fa-heart heart-1 fa-stack"></i>
                                     <i class="fas fa-heart heart-2 fa-stack"></i>
                                 </div>
@@ -143,13 +196,15 @@
                     </div>
                     <!--FIN card type restau-->
                 </div>
+
         </section>
+        <!-- FIN section Restaurants-->
     </main>
     <footer class="footer" id="footer-display">
         <h4 class="footer__list__title">
             ohmyfood
         </h4>
-        <ul class="footer__list max-width">
+        <ul class="footer__list">
             <li class="footer__list__elm">
                 <a class="footer__list__elm__link" href="#">
                     <div class="footer__list__elm__contain">
