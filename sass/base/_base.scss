@@ -1,4 +1,4 @@
-/*media queries, beakpoint*/
+/*media queries, breakpoint*/
 /*normalisation navigateurs et mise en forme du site*/
 body {
     font-family: $font-primary;
@@ -28,15 +28,6 @@ a {
 .max-width {
     max-width: 1400px;
     margin: auto;
-}
-
-/*commun de selecteur*/
-.resto-title__anim .fas, .resto-title__anim .far, .major__container__card__text__anim .fas, .major__container__card__text__anim .far {
-    width: 30px;
-    right: 10px;
-    bottom: 10px;
-    font-size: 30px;
-    position: absolute;
 }
 
 #main-display {
