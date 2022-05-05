@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\images",
+    "\\images\\logo",
+    "\\images\\restaurants",
+    "\\sass",
+    "\\sass\\base",
+    "\\sass\\layout",
+    "\\sass\\utils"
   ],
-  "SelectedNode": "\\C:\\Users\\sylve\\Source\\Repos\\LeMao_Sylvestre_3_27042022",
+  "SelectedNode": "\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }

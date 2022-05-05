@@ -1,0 +1,44 @@
+/*media queries, beakpoint*/
+/*normalisation navigateurs et mise en forme du site*/
+body {
+    font-family: $font-primary;
+    position: relative;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a {
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.max-width {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*commun de selecteur*/
+.resto-title__anim .fas, .resto-title__anim .far, .major__container__card__text__anim .fas, .major__container__card__text__anim .far {
+    width: 30px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 30px;
+    position: absolute;
+}
+
+#main-display {
+    /* animation a creer */
+}

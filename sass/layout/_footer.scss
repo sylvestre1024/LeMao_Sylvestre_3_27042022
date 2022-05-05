@@ -1,0 +1,50 @@
+#footer-display {
+	/* animation a creer */
+}
+
+.footer {
+	background-color: #232323;
+	color: #ffffff;
+	height: 100%;
+
+	h4 {
+		font-family: $font-title;
+		font-weight: 200;
+		width: 90%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: 15px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 0px 5px 25px 15px;
+		list-style-type: none;
+
+		&__elm {
+			font-weight: 300;
+			font-size: small;
+			width: 90%;
+
+			&__link {
+				color: #ffffff;
+			}
+
+			&__contain {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				align-items: center;
+
+				&__text {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
