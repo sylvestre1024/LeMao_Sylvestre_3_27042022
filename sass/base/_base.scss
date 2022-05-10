@@ -33,3 +33,15 @@ a {
 #main-display {
     /* animation a creer */
 }
+.resto-title__anim .fas, .resto-title__anim .far, .major__container__card__text__anim .fas, .major__container__card__text__anim .far {
+    width: 30px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 30px;
+    position: absolute;
+    line-height: 2em;
+}
+.resto-title__anim .far {
+    right: 15%;
+    bottom: 5px;
+}
