@@ -1,2 +1,6 @@
-//box-shadow --> PRESENT 4 FOIS - sans param A FAIRE
-/*@mixin box-shadow*/
+/*media queries*/
+@mixin mediaq {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

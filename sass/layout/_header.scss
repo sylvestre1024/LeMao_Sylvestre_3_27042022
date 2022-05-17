@@ -23,13 +23,13 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: #d6d6d6;
+        background-color: $color-input;
         margin-top: 6px;
         padding-top: 10px;
         padding-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
-        box-shadow: inset 0px 5px 4px 0px #bcbcbc;
+        box-shadow: inset 0px 5px 4px 0px $color-boxshadow;
 
         &__icon {
             display: inline-flex;
@@ -43,13 +43,20 @@
         &__input {
             max-width: 130px;
             border: none;
-            background-color: #d6d6d6;
+            background-color: $color-input;
             font-family: $font-primary;
+            font-size: 16px;
+
+            @include mediaq {
+                font-size: large;
+            }
+
             &::placeholder {
                 text-align: center;
             }
-            &::focus:placeholder {
-                color: #d6d6d6;
+
+            &:focus::placeholder {
+                color: $color-input;
             }
         }
     }
@@ -58,7 +65,7 @@
         text-align: center;
         padding-top: 35px;
         width: 100%;
-        background-color: #efefef;
+        background-color: $color-back-secondary;
 
         &__title {
             font-size: 24px;
@@ -79,7 +86,7 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        background-color: #efefef;
+        background-color: $color-back-secondary;
         padding-top: 35px;
         padding-bottom: 30px;
 
@@ -87,24 +94,21 @@
             width: 218px;
             height: 50px;
             border-radius: 30px;
-            background: -webkit-linear-gradient(#9356dc, #ff79da);
+            background: linear-gradient($color-primary, $color-secondary);
             font-size: medium;
             border: none;
             cursor: pointer;
-            box-shadow: 10px 10px 20px #bcbcbc;
+            box-shadow: 10px 10px 20px $color-boxshadow;
 
             &:hover {
-                box-shadow: 10px 10px 20px #565656;
+                box-shadow: 10px 10px 20px $color-boxshadover;
             }
 
             p {
-                color: #ffffff;
+                color: $color-lightscreen;
                 padding-top: 14px;
-            }
-
-            &:hover {
-                /*animation a creer*/
             }
         }
     }
 }
+
