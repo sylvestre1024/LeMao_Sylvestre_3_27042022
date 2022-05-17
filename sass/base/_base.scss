@@ -1,0 +1,30 @@
+/*normalisation navigateurs et mise en forme du site*/
+body {
+    font-family: $font-primary;
+    position: relative;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a {
+    outline: none;
+    text-decoration: none;
+    color: $color-link;
+    cursor: pointer;
+}
+
+.max-width {
+    max-width: 1400px;
+    margin: auto;
+}

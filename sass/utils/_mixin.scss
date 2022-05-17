@@ -1,0 +1,6 @@
+/*media queries*/
+@mixin mediaq {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

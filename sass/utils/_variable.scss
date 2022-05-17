@@ -1,0 +1,25 @@
+//color
+$color-primary: #9356dc;            /*violet*/
+$color-secondary: #ff79da;          /*rose*/
+$color-secondhover: #e4d5f6;        /*rose clair*/
+$color-tertiary: #99e2d0;           /*vert*/
+$color-front-new-item: #278870;     /*vert clair*/
+$color-back-primary: #353535;       /*gris sombre*/
+$color-back-secondary: #efefef;     /*blanc moins clair*/
+$color-lightscreen: #ffffff;        /*blanc*/
+$color-input: #d6d6d6;              /*gris tres clair*/
+$color-boxshadow: #bcbcbc;          /*gris clair*/
+$color-boxshadover: #565656;        /*gris sombre*/
+$color-link: #000000;               /*noir*/
+//fonts
+$font-primary: 'Roboto', arial, sans-serif;
+$font-secondary: 'Raleway', sans-serif; 
+$font-title: 'Shrikhand', arial, sans-serif;
+
+//progress bar
+$prog-bar-dur: 3000ms;
+$prog-bar-delay: 2000ms;
+$cat-delay: $prog-bar-dur + $prog-bar-delay*2;
+
+//media queries
+$breakpoints: ( desktop: 768px );
